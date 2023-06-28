@@ -1,0 +1,21 @@
+.h1 {
+  font-size: 34.8px;
+  color: #000000;
+}
+
+.h3 {
+  color: green;
+}
+
+.body1 {
+  font-size: 17px;
+  color: #000000;
+  line-height: 25px;
+}
+
+.body2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 25px;
+}

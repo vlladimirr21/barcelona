@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 62%;
+}
+
+.overviewText {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 29px;
+}
+
+.overviewImg {
+}
