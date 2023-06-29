@@ -1,5 +1,4 @@
-import React, {
-  ButtonHTMLAttributes,
+import {
   FC,
   PropsWithChildren,
   ReactElement,

@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import './Overview'
 import Text from 'app/shared/Text/Text'
 import styles from './Overview.module.css'

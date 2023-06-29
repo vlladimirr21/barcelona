@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren } from 'react'
+import { FC } from 'react'
 import styles from './Text.module.css'
 
 // смотрим вообще какой вариант текста есть в проекте - hint подсказка

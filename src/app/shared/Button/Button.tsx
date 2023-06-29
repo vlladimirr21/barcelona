@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, FC, ReactElement } from 'react'
+import { ButtonHTMLAttributes, FC, ReactElement } from 'react'
 import styles from './Button.module.css'
 
 // использование кнопки для вариантов в проекте

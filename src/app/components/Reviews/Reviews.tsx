@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, FC, ReactElement } from 'react'
+import { FC } from 'react'
 import Slider from './Slider/Slider'
 import { Slide } from 'lib/interfaces'
 

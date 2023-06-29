@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, FC, ReactElement, useState } from 'react'
+import { FC, useState } from 'react'
 import Slide from '../Slide/Slide'
 import styles from './Slider.module.css'
 import Button from 'app/shared/Button/Button'

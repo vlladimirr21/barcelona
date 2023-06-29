@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, FC, ReactElement } from 'react'
+import { FC } from 'react'
 import styles from './Slide.module.css'
 import { Slide as ISlide } from 'lib/interfaces'
 
