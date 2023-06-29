@@ -1,0 +1,8 @@
+.container {
+  width: 300px;
+  padding: 25px 15px;
+  background-color: #f9f7f2;
+  height: 410px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}

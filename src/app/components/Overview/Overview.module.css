@@ -1,13 +1,15 @@
 .container {
   display: flex;
-  width: 62%;
+  justify-content: center;
+  /* width: 65%; */
 }
 
 .overviewText {
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 29px;
+  align-self: center;
+  padding: 2%;
 }
 
 .overviewImg {

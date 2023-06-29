@@ -1,18 +1,11 @@
 body {
-  display: flex;
-  margin: 20px;
-  padding: 20px;
+  /* display: flex; */
   font-family: 'KievitPro', 'Roboto';
-  width: 1366px;
+  /* width: 1366px; */
+  /* width: 100vw; */
 }
 
-/* shared-title */
-/* h1 {
-  font-size: 29px;
-  color: #000000;
-} */
-
-/* h2 {
-  font-size: 17px;
-  color: #0000008d;
-} */
+button {
+  border: none;
+  padding: 0;
+}
