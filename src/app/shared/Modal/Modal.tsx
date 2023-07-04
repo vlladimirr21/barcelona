@@ -13,7 +13,7 @@ const root = document.getElementById('modal-root')
 interface ModalProps extends PropsWithChildren {
   openBtn: ReactElement
 }
-
+// чилдрен - сам контент
 const Modal: FC<ModalProps> = ({ openBtn, children }) => {
   const [open, setOpen] = useState(false)
 
@@ -25,6 +25,7 @@ const Modal: FC<ModalProps> = ({ openBtn, children }) => {
   const content = (
     <div className={styles.container}>
       <div className={styles.overlay} onClick={handleClose}>
+        {/* чтобы не прокидывалось на верхние уровни */}
         <div className={styles.wrapper} onClick={e => e.stopPropagation()}>
           {children}
         </div>
@@ -35,10 +36,10 @@ const Modal: FC<ModalProps> = ({ openBtn, children }) => {
   const modal = root ? createPortal(content, root) : null
 
   return (
-    <>
+    <div>
       {cloneElement(openBtn, { onClick: handleOpen })}
       {open ? modal : null}
-    </>
+    </div>
   )
 }
 

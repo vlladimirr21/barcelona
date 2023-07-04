@@ -1,11 +1,4 @@
-import {
-  CSSProperties,
-  RefObject,
-  // useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from 'react'
+import { CSSProperties, RefObject, useEffect, useRef, useState } from 'react'
 
 // проверка высоты
 interface UseCollapseProps {
@@ -18,7 +11,6 @@ interface UseCollapseReturn {
   isCollapsed: boolean
   toggleCollapse: () => void
   containerStyle: CSSProperties
-  // controlsStyle: CSSProperties
 }
 
 // если свернуто то высота заданная
@@ -48,20 +40,18 @@ const useCollapse = ({
   //
   useEffect(() => {
     const contentElement = contentRef.current
-    // если
+
     if (!contentElement) {
-      // ничего не возращать
       return
     }
-    // ??
+
     const contentHeight = contentElement.scrollHeight
-    // тут проверка состояния колапса
+
     if (isCollapsed) {
       setContainerStyle({
         maxHeight: `${initialMaxHeight}px`,
         ...mainContainerStyles,
       })
-      // setIsCollapsed()
     } else {
       setContainerStyle({
         maxHeight: `${contentHeight}px`,
@@ -69,9 +59,7 @@ const useCollapse = ({
       })
     }
   }, [isCollapsed, contentRef.current])
-  // ??
 
-  // ??
   return { containerStyle, contentRef, toggleCollapse, isCollapsed }
 }
 

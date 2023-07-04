@@ -1,8 +1,15 @@
 body {
   font-family: 'KievitPro', 'Roboto';
+  background-color: #f9f7f2;
 }
 
 button {
   border: none;
   padding: 0;
+}
+
+p {
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }

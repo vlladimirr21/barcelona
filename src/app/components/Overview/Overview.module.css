@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .overviewText {
@@ -9,7 +10,4 @@
   text-align: start;
   align-self: center;
   padding: 2%;
-}
-
-.overviewImg {
 }

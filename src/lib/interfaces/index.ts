@@ -2,7 +2,8 @@ export interface Slide {
   id: number
   avatarUrl: string
   userName: string
-  title: string
+  city: string
+  categoryReview: string
   text: string
   imageUrls: string[]
   commentsCount: number

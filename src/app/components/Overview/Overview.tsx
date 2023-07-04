@@ -5,11 +5,8 @@ import styles from './Overview.module.css'
 import useCollapse from '../../../lib/hooks/useCollapse'
 import Button from 'app/shared/Button/Button'
 
-// сама компонента овервью
 const Overview: FC = () => {
-  // принимаем все пропсы что и указали
   const { containerStyle, contentRef, toggleCollapse, isCollapsed } =
-    // начальная высота
     useCollapse({ initialMaxHeight: 145 })
 
   return (
@@ -17,10 +14,9 @@ const Overview: FC = () => {
       <div className={styles.overviewImg}>
         <img src="overview.png" alt="Barcelona tower" />
       </div>
-      {/* Text описали ранее в Text.tsx */}
+
       <div className={styles.overviewText}>
         <div>
-          {/* <div className={styles.overviewText}> */}
           <Text variant="h1" text="Барселона — обзор города" />
           <div ref={contentRef} style={containerStyle}>
             <Text
@@ -29,15 +25,11 @@ const Overview: FC = () => {
             />
           </div>
         </div>
-        {/* эта кнопка для развернуть и скрыть контент в диве  */}
         <Button
           variant="unlock"
-          text={isCollapsed ? 'Читать далее' : 'Svernut'}
+          text={isCollapsed ? 'Читать далее' : 'Свернуть'}
           onClick={toggleCollapse}
         />
-        {/* <button onClick={toggleCollapse}>
-          {isCollapsed ? 'Read more' : 'Hide'}
-        </button> */}
       </div>
     </div>
   )

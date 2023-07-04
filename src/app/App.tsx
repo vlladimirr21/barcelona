@@ -1,15 +1,20 @@
 import './App.css'
+import Chat from './components/Chat/Chat'
 import Overview from './components/Overview/Overview'
 import Reviews from './components/Reviews/Reviews'
+import userAvatar from '../lib/imgs/avatarUser.png'
+import adminAvatar from '../lib/imgs/avatar.png'
 
 function App() {
   return (
     <div className="App">
-      {/* добавляем наши управляемые компоненты */}
       <Overview />
       <Reviews />
-      {/* review */}
-      {/* chat user and admin */}
+      <Chat
+        adminAvatarUrl={adminAvatar}
+        userAvatarUrl={userAvatar}
+        userName="Наталия Полянская"
+      />
     </div>
   )
 }

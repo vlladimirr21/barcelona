@@ -1,9 +1,7 @@
 import { ButtonHTMLAttributes, FC, ReactElement } from 'react'
 import styles from './Button.module.css'
 
-// использование кнопки для вариантов в проекте
-
-type Variant = 'unlock' | 'send' | 'link' | 'dot'
+type Variant = 'unlock' | 'send' | 'link' | 'dot' | 'icon'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant: Variant
@@ -12,7 +10,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDotActive?: boolean
 }
 
-const Button: FC<ButtonProps> = ({ variant, text, isDotActive, ...props }) => {
+const Button: FC<ButtonProps> = ({
+  variant,
+  text,
+  isDotActive,
+  icon,
+  ...props
+}) => {
   return (
     <button
       {...props}
@@ -20,7 +24,7 @@ const Button: FC<ButtonProps> = ({ variant, text, isDotActive, ...props }) => {
         isDotActive ? styles.dotActive : ''
       }`}
     >
-      {text}
+      {icon ?? text}
     </button>
   )
 }

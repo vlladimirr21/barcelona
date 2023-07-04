@@ -1,0 +1,19 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.controls {
+  background-color: white;
+  display: flex;
+}
+
+.sliderControls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 8px;
+}

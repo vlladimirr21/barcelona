@@ -36,3 +36,7 @@
   height: 8px;
   background-color: #ff4641;
 }
+
+.icon {
+  background: transparent;
+}

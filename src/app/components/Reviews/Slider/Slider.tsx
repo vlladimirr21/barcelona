@@ -21,7 +21,8 @@ const Slider: FC<SliderProps> = ({ slides }) => {
   const slideElements = slides.map(
     ({
       id,
-      title,
+      city,
+      categoryReview,
       text,
       commentedMonthAgo,
       commentsCount,
@@ -34,7 +35,8 @@ const Slider: FC<SliderProps> = ({ slides }) => {
         key={id}
         text={text}
         id={id}
-        title={title}
+        city={city}
+        categoryReview={categoryReview}
         commentedMonthAgo={commentedMonthAgo}
         commentsCount={commentsCount}
         likesCount={likesCount}
@@ -52,9 +54,18 @@ const Slider: FC<SliderProps> = ({ slides }) => {
         {slideElements[(currentSlide + 1) % totalSlides]}
         {slideElements[(currentSlide + 2) % totalSlides]}
       </div>
+
       <div className={styles.controls}>
-        <Modal openBtn={<Button variant="unlock" text="Vse otzivi" />}>
-          <div style={{ height: '200px' }}>kakoi to content</div>
+        <Modal
+          openBtn={
+            <Button
+              style={{ border: '1px solid red', padding: '10px 20px' }}
+              variant="unlock"
+              text="Все отзывы"
+            />
+          }
+        >
+          <div>Все отзывы</div>
         </Modal>
 
         <div className={styles.sliderControls}>
@@ -63,6 +74,7 @@ const Slider: FC<SliderProps> = ({ slides }) => {
               variant="dot"
               isDotActive={idx === currentSlide}
               onClick={() => goToSlide(idx)}
+              // style={{ backgroundColor: 'transparent' }}
             />
           ))}
         </div>
