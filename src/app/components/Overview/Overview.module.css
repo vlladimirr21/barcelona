@@ -1,14 +1,13 @@
 .container {
   display: flex;
-  width: 62%;
+  justify-content: center;
+  background-color: #ffffff;
 }
 
 .overviewText {
   display: flex;
   flex-direction: column;
   text-align: start;
-  padding: 29px;
-}
-
-.overviewImg {
+  align-self: center;
+  padding: 2%;
 }

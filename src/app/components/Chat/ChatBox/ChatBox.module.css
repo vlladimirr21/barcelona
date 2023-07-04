@@ -1,0 +1,45 @@
+.container {
+  width: 415px;
+  height: 700px;
+  position: relative;
+  background-color: white;
+  padding: 26px;
+}
+
+.header {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  left: 0;
+  top: 0;
+  padding: 24px;
+  background-color: white;
+  z-index: 10;
+}
+
+.userInfo {
+  margin-left: 20px;
+}
+
+.messagesContainer {
+  padding-top: 80px;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 26px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+}

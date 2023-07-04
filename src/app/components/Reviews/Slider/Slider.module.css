@@ -1,0 +1,23 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.sliderControls {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.sliderControls > button {
+  margin-left: 14px;
+}

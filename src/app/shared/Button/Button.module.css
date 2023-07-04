@@ -1,5 +1,19 @@
+.main {
+  width: fit-content;
+}
+
+.main:hover {
+  cursor: pointer;
+}
+
 .unlock {
-  color: red;
+  background-color: transparent;
+  color: #000000;
+  font-family: 'KievitPro';
+  font-size: 17px;
+  border-bottom: 1px solid red;
+  text-align: start;
+  padding: 0;
 }
 
 .send {
@@ -8,4 +22,21 @@
 
 .link {
   color: blue;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #212121;
+}
+
+.dotActive {
+  width: 8px;
+  height: 8px;
+  background-color: #ff4641;
+}
+
+.icon {
+  background: transparent;
 }

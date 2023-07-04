@@ -1,0 +1,16 @@
+.container {
+  padding: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 8px;
+}
+
+.admin {
+  background-color: #f9f7f2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
